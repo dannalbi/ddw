@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+
+:root{
+    /* PALETA DE COLORES */
+    --color-lila: #8750F7;
+    --color-morado: #2A1454;
+    --color-blanco: #ddd;
+    --color-negro: #0f001a;
+    --color-moradooscuro: #270044;
+    --color-moradomasoscuro:#130027;
+
+    /* TIPOGRAFIAS */
+    --fuente1:"Sora",sans-serif;
+    --fuente2:"Poppins",sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* GENERALES */
+
+
+/* ETIQUETAS */
+body{
+    font-family: var(--fuente1);
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    word-spacing: -0.5px;
+    line-height: 1;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+h2{
+    letter-spacing: 0.5px;
+}
+
+img{
+    display: block;
+}
+
+/* FLECHA */
+.scroll-up {
+    /* Formato de botón */
+    width: 45px;
+    height: 45px;
+    text-align: center; /* Centrar horizontalmente*/
+    line-height: 45px; /* Centrar verticalmente */
+    background-color: var(--color-moradomasoscuro);
+    color: var(--color-blanco);
+  
+    /* Posicionamiento fijo del botón con respecto al viewport */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+html {
+    scroll-behavior: smooth; /* Suavizar la velocidad del scroll */
+  }
+
+/* CLASE */
+.contenedor {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+}
+
+.columna {
+    flex: 1;
+    padding: 10px;
+}
+
+.subtitulo{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.imgfluid{
+    width: 100%;
+}
+
+.alinear{
+    text-align: center;
+}
+
+.centrar{
+justify-content: center;
+align-content: center;
+}
+
+.segundo{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.contenido{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* NAVIGATION BAR */
+#cabecera{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+}
+
+.contenedor-barra {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 50px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-menu-item{
+    flex-basis: 0;
+    flex-grow: 1;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2px;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    color: var(--color-blanco);
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-menu-link:hover{
+    background-color: var(--color-moradooscuro);
+    color: var(--color-lila);
+    border-radius: 5px;
+}
+
+/* PRESENTATIONS */
+
+#presentacion{
+    background-color: var(--color-moradomasoscuro);
+    color: var(--color-blanco);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.imgpresentacion{
+    width: 50%;
+}
+
+.contenedor-cifras{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.cifra{
+    font-size: 45px;
+}
+
+.textocifra{
+    font-size: 15px;
+    line-height: 1.3em;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.contenedorcifrados{
+    display: flex;
+    width: 70%;
+}
+
+.columnacifrados{
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+/* MY QUALITY SERVICES */
+#servicios{
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.serviciosback{
+    color: var(--color-blanco);
+    background-color: var(--color-lila);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+}
+
+.servicios{
+    justify-content: center;
+}
+
+.contenedorservicios{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+
+/* MY WORKS */
+#trabajos{
+    color:var(--color-blanco);
+    background-color: var(--color-moradomasoscuro);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.contenedortrabajos{
+    background-color: var(--color-moradooscuro);
+    max-width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.imgtrabajo{
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    
+    /* ESPACIO ENTRE COLUMNAS */
+    padding-left: 30px;
+    padding-right: 30 px;
+}
+.col-33{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.texto-trabajos{
+    padding-top: 15px;
+    margin-bottom: 35px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* EXPERIENCE AND EDUCATION */
+
+.contenedoreduyexp{
+    background-color: var(--color-moradooscuro);
+    max-width: 100%;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+.eduyexpsubtitle{
+    text-align: left;
+    margin-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-right: 25px;
+}
+
+#eduyexp{
+    background: linear-gradient(90deg, rgba(15,7,21,0.9528186274509804) 0%, rgba(40,24,56,0.7455357142857143) 42%, 
+    rgba(119,100,134,0.5970763305322129) 100%),
+    url(../imagenes/bannerpresentacion.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: var(--color-blanco);
+    padding-bottom: 50px;
+}
+
+
+/* MY SKILLS */
+#habilidades{
+    color:var(--color-blanco);
+    background-color: var(--color-moradomasoscuro);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.contenedorhabilidad{
+    background-color:var(--color-moradooscuro);
+    border-radius: 15%;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ajustar{
+    margin-top: 20px;
+}
+
+/* MY CLIENT'S STORIES */
+#reseñas {
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.columnaclientes{
+    flex: 1;
+    background-color: var(--color-moradomasoscuro);
+    padding: 50px;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding-top: 30px;
+
+}
+
+
+
+.contenedorcliente{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.contenedorreseñas {
+    position: relative; /* Para permitir el posicionamiento absoluto del hijo */
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Estilo del contenedor padre */
+.cont-padre {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo del contenedor hijo */
+.cont-hijo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 4, 43, 0.514); /* Fondo oscuro transparente */
+    color: var(--color-blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efecto de hover en el contenedor padre */
+.cont-padre:hover .cont-hijo {
+    opacity: 1; /* Muestra el texto e íconos al pasar el cursor */
+}
+
+/* Estilo del texto e íconos dentro del contenedor hijo */
+.cont-hijo p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cont-hijo .iconos {
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.cont-hijo .iconos i {
+    color: var(--color-blanco);
+    transition: color 0.3s;
+}
+
+.cont-hijo .iconos i:hover {
+    color: var(--color-moradooscuro); 
+}
+
+
+/* LET'S WORK TOGETHER */
+
+#contacto{
+    color:var(--color-blanco);
+    background-color: var(--color-moradomasoscuro);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
